@@ -369,39 +369,108 @@
     text-align: center;
     color: #505050;
 }
-@media screen and (max-width: 600px){
-    .right-nav{
-        display: flex;
-        align-items: center;
-        gap: 1vw;
-        overflow: hidden;
-        flex-direction: column;
-    }
-    .right-nav a{
-        text-decoration: none;
-        color: #505050;
-        font-family: font2;
-        font-weight: 600;
-        font-size: 0.8vw;
-    }
-    .right-nav h1{
-        display: none;
-        text-decoration: none;
-        color: rgb(59, 58, 58);
-        font-family: font2;
-        font-weight: 600;
-        font-size: 0.8vw;
-    }
-    .box-layout{
-        flex-direction: column;
-    }
-    .card{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-    }
+@media screen and (max-width: 600px) {
+        
+
+
+    .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: right !important;
+    width: 100%;
+    gap: 1vw !important;
+    margin: 0;
+    padding: 0;
+  }
+  .right-nav a {
+    font-size: 1.2vw !important;
+    color: #232323 !important;
+    padding: 0;
+    font-weight: 500;
+    opacity: 1;
+  }
+  .right-nav h1 {
+    display: block !important;
+    font-size: 2.5vw !important;
+    margin: 0 1vw;
+    font-weight: 500;
+    color: #232323 !important;
+  }
+  .right-nav i {
+    font-size: 2.5vw !important;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+  }
+
+    .left-nav {
+    display: none !important;
+  }
+
+  .Page1 {
+    height: auto;
+    padding-bottom: 5vw;
+    border-radius: 0 0 10vw 10vw;
+  }
+  .middle-section {
+    margin-top: 8vw;
+    gap: 3vw;
+    padding: 0 5vw;
+  }
+  .img-section {
+    height: 20vw;
+    width: 20vw;
+    margin: 0 auto;
+  }
+  .img-section img {
+    height: 18vw;
+    width: 18vw;
+    border-radius: 50vw;
+    border-width: 1vw;
+  }
+  .img-section h1 {
+    top: 20%;
+    left: 80%;
+    font-size: 2.2vw;
+    padding: 1vw 2vw;
+    width: max-content;
+  }
+  .fsd-text h1 {
+    font-size: 5vw !important;
+    text-align: center;
+    margin-top: 2vw;
+  }
+  .main-text h1 {
+    font-size: 6vw;
+    line-height: 7vw;
+    margin-bottom: 2vw;
+  }
+  .middle-section a.latest-projects-btn {
+    font-size: 4vw;
+    padding: 3vw 0;
+    border-radius: 5vw;
+    width: 100%;
+    margin-top: 2vw;
+    text-align: center;
+    justify-content: center;
+  }
+  .cv-btn.mobile-cv {
+    margin-top: 3vw;
+    font-size: 4vw;
+    padding: 3vw 0;
+    width: 100%;
+    border-radius: 5vw;
+  }
+  .scrolling-img {
+    height: 22vw;
+    border-radius: 0 0 8vw 8vw;
+  }
+  .page3, .page4, .page5 {
+    margin-top: 0;
+    padding-top: 7vw;
+  }
+  .heading, .projects-heading, .heading-text5 {
+    font-size: 6vw;
+    padding-top: 2vw;
+  }
 }
-@media screen and (max-width: 425px){
-   
-    
-}
+
