@@ -12,99 +12,24 @@
     src: url(Inter-Regular.latin-JLQMKCHE.ttf);
 }
 
-
-body {
-  background-color: #ffffff;
-  color: #000000;
-  transition: background 0.4s, color 0.4s;
-}
-
-body.dark-mode {
-  background: #000000 !important;
-  color: #ffffff !important;
-}
-
-/* Invert sections */
-body.dark-mode .Page1,
-body.dark-mode .page2,
-body.dark-mode .page3,
-body.dark-mode .page4,
-body.dark-mode .page5,
-body.dark-mode .scrolling-img {
-  background: #393838 !important;
-  color: #ffffff !important;
-}
-
-/* Example: invert card backgrounds and borders */
-body.dark-mode .right-nav a,
-body.dark-mode .right-nav span {
-  color: #ffffff !important;
-}
-body.dark-mode .project-card,
-body.dark-mode .box,
-body.dark-mode .mail-section,
-body.dark-mode .scrolling-img,
-body.dark-mode .hand-png {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border-color: #232323 !important;
-  
-}
-
-/* Invert buttons */
-body.dark-mode .copy-btn,
-body.dark-mode .cv-btn,
-body.dark-mode .heading2,
-body.dark-mode .middle-section a,
-body.dark-mode .contact {
-  background: #ffffff !important;
-  color: #000000 !important;
-  border: 1px solid #000000 !important;
-}
-
-/* Invert text gradients to plain text */
-body.dark-mode .main-text h1,
-body.dark-mode .heading,
-body.dark-mode .projects-heading,
-body.dark-mode .box h1,
-body.dark-mode .box p,
-body.dark-mode .heading-text5 {
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  -webkit-text-fill-color: #f0ecec !important;
-  color: #e0e0e0 !important;
-}
-
-
-
 .Page1{
-    background-color:#c8c8c8;
+    background-color:#EFEEED;
     height: 50vw;
     width: 100%;
     border: none;
-    border-radius: 1px 1px 9vw 8vw;
+    border-radius: 0px 0px 8vw 8vw;
     position: relative;
 }
-
-#theme-toggle i {
-  font-size: 2rem;
-  color: #5b5959;
-  background: none !important;
-  border-radius: 50%;
-    height: 100vgh;
-}
-
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3.5vw 3vw;
+    padding: 3.5vw 6vw;
     position: relative;
 
-    .left-nav {
-  display: flex;
-  align-items: center;
-  gap: 2vw;
+    .left-nav{
+        display: flex;
+        gap: 1vw;
 
         .mail-section{
             display: flex;
@@ -123,9 +48,8 @@ body.dark-mode .heading-text5 {
             font-weight: 400;
             font-size: .8vw;
             text-align: center;
-            color: #030202;
+            color: #505050;
         }
-
         .mail-section button{
             padding: 1vw 2.5vw;
             font-family: font1;
@@ -168,16 +92,12 @@ body.dark-mode .heading-text5 {
         font-size: 0.8vw;
     }
 }
- body.dark-mode .mail-section h1 {
-  color: #fff !important;
-}
-
 .middle-section{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -3vw;
+    margin-top: 3.5vw;
     gap: 1vw;
 }
 .img-section{
@@ -194,7 +114,7 @@ body.dark-mode .heading-text5 {
     height: 9vw;
     width: 9vw;
     position: relative;
-    border: .3vw solid rgb(252, 251, 251);
+    border: .3vw solid white;
 }
 .img-section h1{
     font-family: font2;
@@ -216,27 +136,6 @@ body.dark-mode .heading-text5 {
 }
 .main-text{
     overflow: hidden;
-}
-
-.full-stack {
-  background: #f9f8f7;
-  border-radius: 50px;
-  display: inline-block;
-  padding: 1vw 2vw;
-  margin-top: -5vw;  /* Pull upwards, tweak as needed */
-  margin-bottom: 1vw;
-  box-shadow: 0 2px 12px 0 rgba(50,50,50,0.04);
-  position: relative;
-  z-index: 3;
-}
-.full-stack h1 {
-  font-family: 'font2', Arial, sans-serif;
-  font-size: 0.8vw;
-  font-weight: 300;
-  color: #232323;
-  margin: 0;
-  letter-spacing: 0.01em;
-  text-align: center;
 }
 .main-text h1{
  text-align: center;
@@ -262,27 +161,24 @@ body.dark-mode .heading-text5 {
     border-radius: 50px;
     color: white;
     text-decoration: none;
-    
-    
 }
 
 
 .page2{
-    z-index: 122;
-    margin-top: -10vw;
-    width: 100vh;
-    border-bottom: 60%;
+    z-index: 1222;
+    margin-top: 0vw;
+    width: 100%;
+    border-bottom: 50%;
 }
 .scrolling-img{
-    z-index: 1;
+    z-index: 111;
     position: relative;
     background-color: white;
     flex-shrink: 0;
     overflow: hidden;
     white-space: nowrap;
     height: 18vw;
-    border-radius: 01px 1px 8vw 8vw;
-    border-bottom: 60%
+    border-radius: 0px 0px 8vw 8vw;
 }
 .scroll{
     display: inline-block;
@@ -291,16 +187,10 @@ body.dark-mode .heading-text5 {
 .scroll img{
     padding-top: 6vw;
     padding-right: 10vw;
-    height: 3vw;
-    filter: grayscale(100%);   
+    height: 5vw;
+    filter: grayscale(100%);
+   
 }
-
-body.dark-mode .scroll img {
-  filter: none !important;      /* Remove grayscale for color */
-  opacity: 1 !important;
-}
-
-
 @keyframes scroll {
     from{
         transform: translateX(0);
@@ -311,11 +201,11 @@ body.dark-mode .scroll img {
 }
 .page3{
     z-index: -1;
-    margin-top: -103px;
+    margin-top: -115px;
     height: 100vh;
     padding-top: 115px;
     width: 100%;
-    background-color: #f6f6f6;;  
+    background-color:#EFEEED;  
 }
 .heading{
     padding-top: 8vw;
@@ -479,95 +369,39 @@ body.dark-mode .scroll img {
     text-align: center;
     color: #505050;
 }
-
-body.dark-mode .footer,
-body.dark-mode .footer * {
-  color: #fff !important;
+@media screen and (max-width: 600px){
+    .right-nav{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .right-nav a{
+        text-decoration: none;
+        color: #505050;
+        font-family: font2;
+        font-weight: 600;
+        font-size: 0.8vw;
+    }
+    .right-nav h1{
+        display: none;
+        text-decoration: none;
+        color: rgb(59, 58, 58);
+        font-family: font2;
+        font-weight: 600;
+        font-size: 0.8vw;
+    }
+    .box-layout{
+        flex-direction: column;
+    }
+    .card{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
 }
-
-
-
-@media (max-width: 600px) {
-
-    .dark-light i, #theme-toggle i {
-  font-size: 1.6rem;  /* or as you like */
-  color: inherit;      /* Let JS manage light/dark color */
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-.dark-light:hover i, #theme-toggle:hover i {
-  color: #ffbe00; /* Nice gold on hover, or your accent */
-}
-
-
-.full-stack {
-    padding: 4vw 4vw;
-    border-radius: 13vw;
-  }
-  .full-stack h1 {
-    font-size: 4vw;
-  }
-}
-  /* Give clear margin under img-section and middle-section */
-  .img-section {
-    margin-bottom: 4vw !important;
-    z-index: 2;
-    position: relative;
-  }
-
-  .middle-section {
-    margin-bottom: 4vw !important;
-    z-index: 1;
-    position: relative;
-  }
-
-
-
-  .scrolling-img, .page2 {
-    margin-top: 0 !important;
-    margin-bottom: 6vw !important;
-    z-index: 0;
-    position: relative;
-  }
-
-  /* Make sure .scrolling-img never overlaps middle-section */
-  .scrolling-img {
-    position: static !important;
-  }
-
-
-  .page2 {
-    position: static !important;
-  }
-
-  /* Stack everything normally */
-  .Page1,
-  .middle-section,
-  .page2,
-  .page3,
-  .page4,
-  .page5 {
-    position: static !important;
-    z-index: auto !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: 100vw !important;
-    box-sizing: border-box;
-  }
-}
-
-/* === Extra fix for ultra-mobile ≤425px === */
-@media (max-width: 425px) {
-  .img-section {
-    margin-bottom: 8vw !important;
-  }
-  .scrolling-img, .page2 {
-    margin-bottom: 10vw !important;
-  }
-  .middle-section {
-    margin-bottom: 7vw !important;
-  }
+@media screen and (max-width: 425px){
+   
+    
 }
