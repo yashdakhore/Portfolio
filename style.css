@@ -14,14 +14,14 @@
 
 
 body {
-  background: #f6f6f6;
-  color: #232323;
+  background-color: #ffffff;
+  color: #000000;
   transition: background 0.4s, color 0.4s;
 }
 
 body.dark-mode {
-  background: #181818 !important;
-  color: #eee !important;
+  background: #000000 !important;
+  color: #ffffff !important;
 }
 
 /* Invert sections */
@@ -32,20 +32,21 @@ body.dark-mode .page4,
 body.dark-mode .page5,
 body.dark-mode .scrolling-img {
   background: #393838 !important;
-  color: #eee !important;
+  color: #ffffff !important;
 }
 
 /* Example: invert card backgrounds and borders */
 body.dark-mode .right-nav a,
 body.dark-mode .right-nav span {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 body.dark-mode .project-card,
 body.dark-mode .box,
 body.dark-mode .mail-section,
+body.dark-mode .scrolling-img,
 body.dark-mode .hand-png {
-  background: #090909 !important;
-  color: #fafafa !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
   border-color: #232323 !important;
   
 }
@@ -56,9 +57,9 @@ body.dark-mode .cv-btn,
 body.dark-mode .heading2,
 body.dark-mode .middle-section a,
 body.dark-mode .contact {
-  background: #faf9f9 !important;
-  color: #0a0a0a !important;
-  border: 1px solid #444 !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
 }
 
 /* Invert text gradients to plain text */
@@ -77,11 +78,11 @@ body.dark-mode .heading-text5 {
 
 
 .Page1{
-    background-color:#adaaa8;
+    background-color:#c8c8c8;
     height: 50vw;
     width: 100%;
     border: none;
-    border-radius: 0px 0px 8vw 8vw;
+    border-radius: 1px 1px 9vw 8vw;
     position: relative;
 }
 
@@ -97,16 +98,13 @@ body.dark-mode .heading-text5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3.5vw 6vw;
+    padding: 3.5vw 3vw;
     position: relative;
 
     .left-nav {
   display: flex;
   align-items: center;
   gap: 2vw;
-
-
-        
 
         .mail-section{
             display: flex;
@@ -179,7 +177,7 @@ body.dark-mode .heading-text5 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3.5vw;
+    margin-top: -3vw;
     gap: 1vw;
 }
 .img-section{
@@ -270,20 +268,21 @@ body.dark-mode .heading-text5 {
 
 
 .page2{
-    z-index: 1222;
-    margin-top: 0vw;
-    width: 100%;
-    border-bottom: 50%;
+    z-index: 122;
+    margin-top: -10vw;
+    width: 100vh;
+    border-bottom: 60%;
 }
 .scrolling-img{
-    z-index: 111;
+    z-index: 1;
     position: relative;
     background-color: white;
     flex-shrink: 0;
     overflow: hidden;
     white-space: nowrap;
     height: 18vw;
-    border-radius: 0px 0px 8vw 8vw;
+    border-radius: 01px 1px 8vw 8vw;
+    border-bottom: 60%
 }
 .scroll{
     display: inline-block;
@@ -292,7 +291,7 @@ body.dark-mode .heading-text5 {
 .scroll img{
     padding-top: 6vw;
     padding-right: 10vw;
-    height: 5vw;
+    height: 3vw;
     filter: grayscale(100%);   
 }
 
@@ -312,11 +311,11 @@ body.dark-mode .scroll img {
 }
 .page3{
     z-index: -1;
-    margin-top: -115px;
+    margin-top: -103px;
     height: 100vh;
     padding-top: 115px;
     width: 100%;
-    background-color:#EFEEED;  
+    background-color: #f6f6f6;;  
 }
 .heading{
     padding-top: 8vw;
