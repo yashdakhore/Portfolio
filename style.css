@@ -17,7 +17,7 @@
     height: 50vw;
     width: 100%;
     border: none;
-    border-radius: 0px 0px 8vw 8vw;
+    border-radius: 0px 0px 10vw 10vw;
     position: relative;
 }
 .navbar{
@@ -200,11 +200,6 @@
   vertical-align: middle;
 }
 
-.latest-projects-btn:active,
-.latest-projects-btn:focus,
-.latest-projects-btn:hover {
-  background: #232323;
-}
 
 .cv-btn {
   font-weight: 500;
@@ -231,6 +226,7 @@
     margin-top: 0vw;
     width: 100%;
     border-bottom: 50%;
+    border-radius: 0 0 15vw 15vw;
 }
 .scrolling-img{
     z-index: 111;
@@ -261,6 +257,14 @@
         transform: translateX(-100%);
     }
 }
+
+.page2-bg {
+  background: #EFEEED;
+  width: 100%;
+  position: relative;
+  /* Optional: set height or let content define it */
+}
+
 .page3{
     z-index: -1;
     margin-top: -115px;
@@ -280,7 +284,7 @@
     -webkit-text-fill-color: transparent;
     background-color: red;
 }
-.heading2{
+.services-btn{
     background-color: white;
     text-align: center;
     padding: 1vw 2vw;
@@ -291,7 +295,6 @@
     justify-self: center;
     font-family: font1;
     font-weight: 400;
-    rotate: 350deg;
     font-size: 1vw;
 }
 .card{
@@ -531,12 +534,29 @@
     margin: 1vw auto 0 auto;
     width: 20vw;
   }
-
-
+.Page1 {
+        border-radius: 0 0 24vw 24vw !important; /*bigger curve for small screens */
+    }
+.page2 {
+        border-radius: 0 0 16vw 16vw !important; /*bottom-left and bottom-right curves */
+        overflow: hidden;
+        background-color: #efeeed;
+    }
+   
   .scrolling-img {
-    height: 22vw;
-    border-radius: 0 0 8vw 8vw;
+    border-radius: 0 !important; /* Remove border radius from inside */
   }
+
+
+  .services-btn {
+    font-size: 4vw;
+    padding: 3vw 9vw;
+    border-radius: 5vw;
+    margin: 5vw auto 3vw auto;
+    width: auto;
+  }
+
+  
   .page3, .page4, .page5 {
     margin-top: 0;
     padding-top: 7vw;
