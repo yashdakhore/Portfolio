@@ -57,3 +57,8 @@ copyBtn.addEventListener('click', function() {
     copyBtn.textContent = 'Copy';
   }, 1500);
 });
+
+document.querySelector('.services-btn').addEventListener('click', function(e){
+    e.preventDefault(); // Prevent any default
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
