@@ -13,11 +13,11 @@
 }
 
 .Page1{
-    background-color:#EFEEED;
-    height: 50vw;
+    background-color:#c8c8c8;
+    height: 39vw;
     width: 100%;
     border: none;
-    border-radius: 0px 0px 10vw 10vw;
+    border-radius: 0px 0px 16vw 16vw;
     position: relative;
 }
 .navbar{
@@ -97,7 +97,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 0.1vw;
+    margin-top: -2vw;
     gap: 0.5vw;
 }
 .img-section{
@@ -123,7 +123,8 @@
     left: 80%;
     width: 60%;
     rotate: 350deg;
-    font-weight: 400;
+    font-weight: 300;
+    font-family: font1;
     border: none;
     background-color: white;
     border-radius: 50px;
@@ -139,8 +140,8 @@
  font-family: font1;
  position: relative;
  font-weight: 400;
- font-size: 3.5vw;
- line-height: 4vw;
+ font-size: 2.8vw;
+ line-height: 3vw;
  background: -webkit-linear-gradient(left, #000000, #424141, #817e7e);
  background-clip : text;
  -webkit-text-fill-color: transparent;
@@ -164,12 +165,12 @@
   background: #fff;
   color: #232323;
   font-family: font2, sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 0.8em;
+  font-weight: 350;
   padding: 1.2vw 5vw;
   border-radius: 50vw;
   text-align: center;
-  margin: 3vw auto 3vw auto;
+  margin: 1vw auto 1vw auto;
   width: fit-content;
   box-shadow: 0 1px 8px rgba(60,60,60,0.04);
   letter-spacing: 0.01em;
@@ -182,13 +183,12 @@
   gap: 0.6em;
   background: #000;
   color: #fff !important;
-  font-family: font2, sans-serif;
   font-size: 1.1em;
   font-weight: 500;
-  padding: 0.8em 2.2em;
+  padding: 0.8em 2.0em;
   border: none;
   border-radius: 2em;
-  margin: 1vw auto;
+  margin: 0.5vw auto;
   text-align: center;
   width: fit-content;
   transition: background 0.18s;
@@ -196,7 +196,7 @@
 }
 
 .latest-projects-btn i {
-  font-size: 1.2em;
+  font-size: 1.1em;
   vertical-align: middle;
 }
 
@@ -221,9 +221,9 @@
   display: none;
 }
 
-.page2{
-    z-index: 1222;
-    margin-top: 0vw;
+.page2{  /* Try -8vw to -12vw for desktop, adjust as needed */
+    z-index: 10;
+  position: relative;
     width: 100%;
     border-bottom: 50%;
     border-radius: 0 0 15vw 15vw;
@@ -235,7 +235,7 @@
     flex-shrink: 0;
     overflow: hidden;
     white-space: nowrap;
-    height: 18vw;
+    height: 15vw;
     border-radius: 0px 0px 8vw 8vw;
 }
 .scroll{
@@ -245,7 +245,7 @@
 .scroll img{
     padding-top: 6vw;
     padding-right: 10vw;
-    height: 5vw;
+    height: 4vw;
     filter: grayscale(100%);
    
 }
@@ -259,7 +259,7 @@
 }
 
 .page2-bg {
-  background: #EFEEED;
+  background: #c8c8c8;
   width: 100%;
   position: relative;
   /* Optional: set height or let content define it */
@@ -267,11 +267,11 @@
 
 .page3{
     z-index: -1;
-    margin-top: -115px;
-    height: 100vh;
+    margin-top: -20px;
+    height: 80vh;
     padding-top: 115px;
     width: 100%;
-    background-color:#EFEEED;  
+    background-color:#c8c8c8;  
 }
 .heading{
     padding-top: 8vw;
@@ -288,14 +288,14 @@
     background-color: white;
     text-align: center;
     padding: 1vw 2vw;
-    margin-top: 3vw;
+    margin:2vw;
     border-radius: 50px;
     border: none;
     display: flex;
     justify-self: center;
     font-family: font1;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 .card{
     display: flex;
@@ -348,19 +348,97 @@
     margin-top: -115px;
     border-radius: 8vw 8vw 8vw 8vw;
 }
-.projects-heading{
-    font-family: font1;
-    font-size: 3vw;
-    background: -webkit-linear-gradient(left, #000000, #424141, #817e7e);
-    background-clip : text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    padding-top: 2vw;
+.projects-heading {
+  font-size: 6vw;
+  text-align: center;
+  font-family: font1;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin: 2VH;
+  padding-top: 4vw;
+  background: -webkit-linear-gradient(left, #232323, #747474);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2vw;
+  padding: 2vw 4vw;
+  margin-top: 2vw;
+}
+
+.project-card {
+  background: #c8c8c8;
+  border-radius: 2vw;
+  box-shadow: 0 4px 24px rgba(100,100,100,0.06);
+  padding: 2vw;
+  text-align: left;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.project-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 1vw;
+  border-radius: 1vw;
+}
+
+.project-card h2 {
+  font-size: 1.2em;
+  margin: 0.5vw 0 0.5vw 0;
+}
+
+.project-card p {
+  font-size: 1em;
+  margin-bottom: 1vw;
+  color: #484848;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+
+.tech-stack span {
+  background: #f0f0f0;
+  color: #232323;
+  padding: 0.2em 0.8em;
+  border-radius: 1vw;
+  font-size: 0.9em;
+}
+
+.project-link {
+  margin-top: auto;
+  padding: 0.5em 1.2em;
+  background: #232323;
+  color: #fff !important;
+  border-radius: 1vw;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.project-link:hover {
+  background: #000;
+}
+
+
 .page5{
     height: 50vw;
     width: 100%;
-    background-color: #EFEEED;
+    background-color: #c8c8c8;
     margin-top: -115px;
     padding-top: 115px;
     font-family: font1;
@@ -379,7 +457,7 @@
 }
 .heading-text5{
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     background: -webkit-linear-gradient(left, #000000, #424141, #817e7e);
     background-clip : text;
     -webkit-text-fill-color: transparent;
@@ -392,7 +470,7 @@
     margin-top: 2vw;
 }
 .contact{
-    font-size: .8vw;
+    font-size: 3vw;
     text-decoration: none;
     background-color: white;
     padding: 1.5vw 2.5vw;
@@ -409,8 +487,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 7vw;
-    margin-top: 10vw;
+    padding: 4vw 4vw;
+    margin-top: 4vw;
     border-top: 1px solid #9b9292;
 }
 .footer-text{
@@ -430,10 +508,12 @@
 .contact-info h1{
     font-family: font1;
     font-weight: 400;
-    font-size: .8vw;
+    font-size: 1vw;
     text-align: center;
     color: #505050;
 }
+
+
 @media screen and (max-width: 600px) {
         
 
@@ -556,11 +636,59 @@
     width: auto;
   }
 
-  
-  .page3, .page4, .page5 {
+  .page3{
     margin-top: 0;
     padding-top: 7vw;
+    height: auto;
+    border-radius: 0 0 8vw 8vw;
   }
+    
+  
+  .page4{
+     margin-top: 0;
+    padding-top: 7vw;
+    height: auto;
+    background :#faf9f6;;
+
+}
+
+    .page5 {
+    margin-top: 0;
+    padding-top: 2vw;
+    border-radius: 8vw 8vw 0 0 ;
+    background-color: #c8c8c8;
+    height: 26vh;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 8px 6px 8px;
+    margin-top: 4;
+    margin-bottom: 3vh;
+    border-top: 1px solid #9b9292;
+    gap: 6px; /* Adds space between copyright and links */
+}
+
+.footer-text {
+    font-size: 15px;
+    color: #505050;
+    text-align: center;
+    margin-bottom: 2px;
+    letter-spacing: 0.01em;
+}
+
+.footer {
+    background: #c5c4c4; /* Use your section's grey */
+    border-top: 5px solidrgb(1, 1, 1)b;
+  }
+  .footer-text,
+  .contact-info {
+    color: #222; /* Or #505050, or white for dark bg */
+  }
+
   .heading, .projects-heading, .heading-text5 {
     font-size: 6vw;
     padding-top: 2vw;
