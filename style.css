@@ -678,7 +678,7 @@
 }
 
 .footer-text {
-    font-size: 15px;
+    font-size: 10px;
     color: #505050;
     text-align: center;
     margin-bottom: 2px;
@@ -687,12 +687,26 @@
 
 .footer {
     background: #c5c4c4; /* Use your section's grey */
-    border-top: 5px solidrgb(1, 1, 1)b;
+    border-top: 2px dashed #fcfcfc;
   }
+
   .footer-text,
-  .contact-info {
-    color: #222; /* Or #505050, or white for dark bg */
-  }
+ .contact-info a,h1 {
+    font-size: 2vw;
+    color: #505050;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+
+.contact{
+    font-size: 2vw;
+    text-decoration: none;
+    background-color: white;
+    padding: 1.5vw 2.5vw;
+    border-radius: 10vw;
+    color: white;
+}
 
   .heading, .projects-heading, .heading-text5 {
     font-size: 6vw;
