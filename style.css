@@ -424,6 +424,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    justify-self: center;
+  
 }
 
 .services-btn:hover, .services-btn:focus {
@@ -549,12 +552,14 @@
     font-size: 4vw;
 }
 .hand-png{
-    margin-top: 4vw;
-    padding: 3.5vw;
-    background-color: white;
     display: flex;
-    justify-self: center;
-    border-radius: 10vw;
+  justify-content: center;  /* <-- centers the icon horizontally */
+  align-items: center;
+  margin: 4vw auto;
+  padding: 3.5vw;
+  background-color: white;
+  border-radius: 10vw;
+  width: fit-content;
 }
 .heading-text5{
     text-align: center;
