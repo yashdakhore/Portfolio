@@ -12,6 +12,8 @@
     src: url(Inter-Regular.latin-JLQMKCHE.ttf);
 }
 
+
+
 .Page1{
     background-color:#c8c8c8;
     height: 39vw;
@@ -25,7 +27,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 3.5vw 6vw;
-    position: relative;
+  
+
+
+    .left-side {
+        display: flex;
+        align-items: center;
+        gap: 1vw; /* controls space between theme and left-nav */
+        }
+
 
     .left-nav{
         display: flex;
@@ -55,7 +65,7 @@
             font-family: font1;
             font-weight: 400;
             font-size: .8vw;
-            border: none;
+            border: 2px solid white;
             background-color: white;
             border-radius: 50px;
         }
@@ -71,6 +81,10 @@
         border-radius: 50px;
         color: #505050;
     }
+
+
+
+
     .right-nav{
         display: flex;
         align-items: center;
@@ -200,19 +214,50 @@
   font-size: 1.1em;
   vertical-align: middle;
 }
+.copy-btn {
+    background: #fff;
+    color: #333;
+    border: 2px solid #eceae8;
+    border-radius: 50px;
+    font-family: font1;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 1vw 2.5vw;
+    transition: 
+        border-color 0.2s,
+        color 0.2s,
+        background 0.2s;
+    cursor: pointer;
+    outline: none;
+}
 
 
 .cv-btn {
-  font-weight: 500;
-  padding: 0.7em 2em;
-  border-radius: 50vw;
-  border: 2px solid #e5e2e2;
-  margin: 1;
-  width: auto;
-  display: inline-block;
-  box-shadow: none;
-  letter-spacing: 0.01em;
-  vertical-align: middle;
+    font-weight: 500;
+    padding: 1vw 2.5vw;
+    border-radius: 50px;
+    border: none;
+    background: white;
+    color: #232323;
+    font-family: font1;
+    font-size: .8vw;
+    text-decoration: none;
+    transition: 
+        background 0.2s,
+        color 0.2s,
+        border 0.2s;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid transparent; /* for border animation on hover */
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cv-btn:hover, .cv-btn:focus {
+    background: transparent;
+    color: white;
+    border: 2px solid #fbf8f8;
+    text-decoration: none;
 }
 
 
@@ -319,7 +364,6 @@
 .box{
     height: 120px;
     width: 150px;
-    /* background-color: red; */
     padding: 2vw 3vw;
     display: flex;
     gap: .5vw;
@@ -388,10 +432,7 @@
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.project-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
-  transform: translateY(-4px) scale(1.03);
-}
+
 
 .project-card img {
   width: 48px;
@@ -410,6 +451,12 @@
   font-size: 1em;
   margin-bottom: 1vw;
   color: #484848;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.19), 0 1.5px 6px rgba(60,60,60,0.05);
+  background: #fff;
+  transform: translateY(-8px) scale(1.035);
 }
 
 .tech-stack {
@@ -442,13 +489,13 @@
 
 
 .page5 {
-    /* height: 40vw;  <-- REMOVE THIS LINE */
+   
     width: 100%;
     background-color: #c8c8c8;
     margin-top: -115px;
     padding-top: 115px;
     font-family: font1;
-    /* Optional: min-height: 400px; */
+  
 }
 
 .hand-png i{
@@ -720,5 +767,151 @@
     font-size: 6vw;
     padding-top: 2vw;
   }
+}
+
+
+
+/*Theme Changer */
+#theme-icon {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+body.dark-mode #theme-icon {
+  color: white;
+}
+
+body.dark-mode {
+  background: #111;
+  color: #f1f1f1;
+}
+body.dark-mode .scroll img {
+  filter: none !important;
+}
+
+body.dark-mode .Page1,
+body.dark-mode .page2-bg,
+body.dark-mode .page2,
+body.dark-mode .page3,
+body.dark-mode .page4,
+body.dark-mode .page5 {
+  background: #222 !important;
+}
+
+body.dark-mode .navbar {
+  background: #222222 !important;
+}
+
+body.dark-mode .mail-section {
+  background: #292727 !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.09);
+}
+body.dark-mode .mail-section h1 {
+  color: #fff !important;
+}
+
+body.dark-mode .mail-section button:hover,
+body.dark-mode .left-nav button:hover,
+body.dark-mode .cv-btn:hover {
+  background: #232323 !important;
+  color: #fff !important;
+  border-color: #fff !important;   /* White border on hover */
+  cursor: pointer;
+}
+
+
+
+
+body.dark-mode .main-text h1 {
+  background: none !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body.dark-mode .right-nav a,
+body.dark-mode .right-nav h1 {
+  color: #fff !important;
+}
+
+body.dark-mode .img-section h1 {
+  background: #020202 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .fsd-text {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .scrolling-img {
+  background: #111 !important;
+}
+
+
+
+
+body.dark-mode .card,
+body.dark-mode .box-layout,
+body.dark-mode .box {
+    background: transparent !important; /* Keep cards transparent if needed */
+}
+
+body.dark-mode .box h1,
+body.dark-mode .box p {
+    color: #fff !important; /* Make titles and descriptions white */
+    -webkit-text-fill-color: #fff !important;
+    background: none !important; /* Remove light gradients */
+}
+
+body.dark-mode .box i {
+    color: #ffd700 !important; /* Example: gold icons (choose any color) */
+    /* Or use #00c3ff, #2affd5, or your favorite for color variety */
+}
+
+body.dark-mode .main-text h1,
+body.dark-mode .projects-heading,
+body.dark-mode .heading,
+body.dark-mode .heading-text5 {
+    background: -webkit-linear-gradient(left, #fff, #eee, #bbb);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark-mode .project-card {
+  background: #373737;
+  color: #fafafa;
+  border: 1px solid white; /* Optional: make text darker for readability */
+}
+
+body.dark-mode .project-card p {
+  color: #fff;
+}
+
+body.dark-mode .hand-png i {
+    color: #111 !important;         /* Black icon in dark mode */
+}
+
+body.dark-mode .footer {
+  background: #191919 !important;
+  color: #f1f1f1 !important;
+  border-top: 2px dashed #3e3e3e;
+}
+
+body.dark-mode .footer-text,
+body.dark-mode .contact-info a,
+body.dark-mode .contact-info h1 {
+  color: #e2e2e2 !important;
+}
+
+
+.mail-section .copy-btn:hover,
+.mail-section .copy-btn:focus {
+    background: #c8c8c8 !important;
+    border-color: #fff !important;
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgba(40,40,40,0.10) !important;
+    cursor: pointer;
 }
 
