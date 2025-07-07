@@ -435,14 +435,16 @@
 }
 
 
-.page5{
-    height: 50vw;
+.page5 {
+    /* height: 40vw;  <-- REMOVE THIS LINE */
     width: 100%;
     background-color: #c8c8c8;
     margin-top: -115px;
     padding-top: 115px;
     font-family: font1;
+    /* Optional: min-height: 400px; */
 }
+
 .hand-png i{
     text-align: center;
     font-size: 4vw;
@@ -483,36 +485,39 @@
 .contact:nth-child(2){
    color: #000000;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4vw 4vw;
-    margin-top: 4vw;
-    border-top: 1px solid #9b9292;
+    padding: 1vw 2vw;           /* Smaller padding */
+    margin-top: 2vw;            /* Smaller top margin */
+    border-top: 2px dashed #fcfcfc;
+    background: transparent;    /* Or match your design */
 }
-.footer-text{
-    font-size: 1vw;
+
+.footer-text {
+    font-size: 0.85vw;          /* Smaller text on desktop */
     color: #505050;
+    letter-spacing: 0.02em;
 }
-.contact-info{
+
+.contact-info {
     display: flex;
-    gap: .5vw;
+    gap: .7vw;
 }
-.contact-info a{
-    font-size: 2vw;
+.contact-info a,h1 {
+    font-size: 0.9vw;
+    color: #505050;
     text-decoration: none;
-    color: #505050;
-
-}
-.contact-info h1{
-    font-family: font1;
-    font-weight: 400;
-    font-size: 1vw;
-    text-align: center;
-    color: #505050;
+    opacity: 0.75;
+    transition: opacity 0.2s;
 }
 
+
+.contact-info a:hover {
+    opacity: 2;
+}
 
 @media screen and (max-width: 600px) {
         
