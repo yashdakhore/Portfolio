@@ -44,7 +44,7 @@
 
         }
         .mail-section h1{
-            font-family: font1;
+            font-family: font2;
             font-weight: 400;
             font-size: .8vw;
             text-align: center;
@@ -131,6 +131,7 @@
     padding: .8vw 1vw;
     letter-spacing: .5px;
     color: #505050;
+    opacity: 1;
 }
 .main-text{
     overflow: hidden;
@@ -219,6 +220,11 @@
 /* Hide .mobile-cv on desktop */
 .cv-btn.mobile-cv {
   display: none;
+}
+
+
+.mail-section h1, .main-text h1, .right-nav a {
+  opacity: 1;
 }
 
 .page2{  /* Try -8vw to -12vw for desktop, adjust as needed */
@@ -610,8 +616,9 @@
     display: block;
     background: #fff;
     color: #232323;
-    font-family: font2, sans-serif;
+    font-family: font1, sans-serif;
     font-weight: 400;
+    font-size: 1.5vh;
     padding: 2vw 0;
     border-radius: 50vw;
     border: 3px solid #e5e2e2;
@@ -663,6 +670,7 @@
     border-radius: 8vw 8vw 0 0 ;
     background-color: #c8c8c8;
     height: 26vh;
+    margin-bottom: 1vh;
   }
   
   .footer {
@@ -672,7 +680,7 @@
     justify-content: center;
     padding: 12px 8px 6px 8px;
     margin-top: 4;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     border-top: 1px solid #9b9292;
     gap: 6px; /* Adds space between copyright and links */
 }
@@ -700,7 +708,7 @@
 }
 
 .contact{
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-decoration: none;
     background-color: white;
     padding: 1.5vw 2.5vw;
